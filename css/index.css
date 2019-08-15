@@ -272,6 +272,11 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -282,6 +287,8 @@ img {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
+    width: 90%;
   }
 }
 .home .content-pick .destination {
