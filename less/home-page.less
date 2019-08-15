@@ -11,7 +11,7 @@
   .content-section {
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
     @media @mobile {
       flex-direction: column;
@@ -21,12 +21,12 @@
    
     
     .text-content {
-      width: 48%;
+      width: 100%;
       padding-right: 1%;
     }
 
     .img-content {
-      width: 48%;
+      width: 100%;
       padding-left: 1%;
 
       img {
@@ -43,12 +43,19 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+    
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    
     }
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    } 
   }
 
   .content-destination {
